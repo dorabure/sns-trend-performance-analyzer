@@ -1,6 +1,6 @@
 # Release notes — Version 2.0 Interim
 
-Status: Release Candidate / ready for user review. Published: No. Date: 2026-10-06.
+Status: Release Candidate / published as a GitHub public pre-release. Published: Yes. Date: 2026-10-06.
 
 CSV / fictional Canonical Demo and seven JA/EN analysis/settings screens are complete. X OAuth, automatic token refresh, manual and scheduled OWN sync are implemented and previously real-verified in private environment. Scheduled work uses PostgreSQL rows, a fixed Beat tick and Celery / Redis with at-least-once delivery and idempotency. Demo/Live mode isolation and capability gating prevent fallback or unsupported sync. AI Generate, stored evidence, History and Compare Previous are complete. Performance has controlled local validation.
 

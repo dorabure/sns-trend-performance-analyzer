@@ -5,7 +5,7 @@
 SNS投稿実績、市場トレンド、競合、投稿Gapを同じ条件で読み解き、根拠付きAI提案と履歴比較につなぐ意思決定支援ダッシュボードです。CSVまたはX Liveのデータを共通Normalizerで取り込み、7つの分析・設定画面で扱います。
 
 **X: Complete / previously real-verified. Instagram: Deferred / OAuth and Profile foundation only.**
-Dockerで架空Demoを再現でき、X・Instagram・OpenAIの秘密情報は不要です。Version 2.0 Interimはユーザー確認用Release Candidateです。公開判断は未実施です。
+Dockerで架空Demoを再現でき、X・Instagram・OpenAIの秘密情報は不要です。Version 2.0 InterimはRelease CandidateとしてGitHub上でPublic Pre-release公開済みです。
 
 ![Canonical Demo Overview](docs/portfolio/screenshots/v2_01_overview_ja.png)
 

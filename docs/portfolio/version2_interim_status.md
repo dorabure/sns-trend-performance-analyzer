@@ -1,6 +1,6 @@
 # Version 2.0 Interim status
 
-Version 2.0 Interim: Complete. Release Candidate: Ready for user review. Published: No.
+Version 2.0 Interim: Complete. Release Candidate: Published as a GitHub public pre-release. Published: Yes.
 
 | Category | State |
 | --- | --- |

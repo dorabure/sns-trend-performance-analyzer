@@ -5,7 +5,7 @@
 A decision dashboard connecting social performance, market trends, competitor analysis and content gaps to evidence-backed AI suggestions and snapshot comparison. CSV and X Live share a normalizer and seven analysis/settings screens.
 
 **X: Complete / previously real-verified. Instagram: Deferred / OAuth and Profile foundation only.**
-Docker reproduces a fictional Demo without X, Instagram or OpenAI credentials. Version 2.0 Interim is a Release Candidate ready for user review. Publication is pending.
+Docker reproduces a fictional Demo without X, Instagram or OpenAI credentials. Version 2.0 Interim is a Release Candidate published on GitHub as a public pre-release.
 
 ![Canonical Demo Overview](docs/portfolio/screenshots/v2_01_overview_ja.png)
 
