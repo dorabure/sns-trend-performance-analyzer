@@ -1,0 +1,110 @@
+{
+  "version": "phase14-v1",
+  "anchor_date": "2026-10-04",
+  "first_date": "2026-07-07",
+  "seed": 1401,
+  "counts": {
+    "own_posts": 180,
+    "account_daily": 180,
+    "trend_posts": 4500,
+    "competitor_posts": 540
+  },
+  "files": {
+    "own_posts.csv": {
+      "rows": 180,
+      "bytes": 30060,
+      "sha256": "1e1af28692fd118deda1c3172e0e13f4da96c1a19c28f3db73a50acf20d73166",
+      "headers": [
+        "platform",
+        "post_id",
+        "account_name",
+        "posted_at",
+        "text",
+        "media_type",
+        "impressions",
+        "reach",
+        "views",
+        "likes",
+        "comments",
+        "shares",
+        "saves",
+        "hashtags"
+      ]
+    },
+    "account_daily.csv": {
+      "rows": 180,
+      "bytes": 7893,
+      "sha256": "745f15fc6a9e5c3457ae2ff476195ceeef9768e416da4f0d7a3e7fb275b8c348",
+      "headers": [
+        "platform",
+        "account_name",
+        "date",
+        "followers",
+        "following",
+        "post_count"
+      ]
+    },
+    "trend_posts.csv": {
+      "rows": 4500,
+      "bytes": 566574,
+      "sha256": "42bfc7dde03ed7aff9a24d07d368ef7523f2045675e0414bfbcee673fdb53641",
+      "headers": [
+        "platform",
+        "post_id",
+        "posted_at",
+        "text",
+        "keyword",
+        "hashtags",
+        "views",
+        "likes",
+        "comments",
+        "shares"
+      ]
+    },
+    "competitor_posts.csv": {
+      "rows": 540,
+      "bytes": 64967,
+      "sha256": "cb63244952a6dc1aa89ae53a9b09e074114f5432b343cab28cc8b33f3a546f7b",
+      "headers": [
+        "platform",
+        "account_name",
+        "post_id",
+        "posted_at",
+        "text",
+        "media_type",
+        "views",
+        "likes",
+        "comments",
+        "shares",
+        "followers"
+      ]
+    }
+  },
+  "topics": [
+    "生成AI",
+    "業務効率化",
+    "AIエージェント",
+    "データ分析",
+    "動画生成",
+    "SNS運用"
+  ],
+  "competitor_accounts": 3,
+  "scenarios": [
+    "rising",
+    "peak",
+    "falling",
+    "stable",
+    "low",
+    "renewed_growth"
+  ],
+  "expected_contracts": {
+    "gap_classifications": [
+      "OPPORTUNITY",
+      "BALANCED",
+      "HIGH_COVERAGE",
+      "LOW_PRIORITY"
+    ],
+    "null_and_zero": true,
+    "ai": "Fixed fictional fixture; no live OpenAI calls"
+  }
+}

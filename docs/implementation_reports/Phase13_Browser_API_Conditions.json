@@ -1,0 +1,482 @@
+[
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/dashboard/overview",
+    "query": "platform=INSTAGRAM&from=2026-09-04&to=2026-10-03",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/dashboard/overview",
+    "query": "platform=INSTAGRAM&from=2026-09-04&to=2026-10-03",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/dashboard/overview",
+    "query": "platform=INSTAGRAM&from=2026-09-04&to=2026-10-03",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/dashboard/overview",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/dashboard/overview",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/dashboard/overview",
+    "query": "platform=INSTAGRAM&from=2026-09-04&to=2026-10-03",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/dashboard/overview",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/dashboard/overview",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/accounts/own/analytics",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/accounts/own/posts",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02&page=1&page_size=20&sort=posted_at&order=desc",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/accounts/own/posts",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02&page=1&page_size=20&sort=posted_at&order=desc",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/accounts/own/analytics",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/accounts/own/analytics",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/accounts/own/posts",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02&page=1&page_size=20&sort=posted_at&order=desc",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/accounts/own/posts",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02&page=1&page_size=20&sort=posted_at&order=desc",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/accounts/own/analytics",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/accounts/own/posts",
+    "query": "platform=INSTAGRAM&from=2026-10-01&to=2026-10-02&page=1&page_size=20&sort=posted_at&order=desc",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/accounts/own/analytics",
+    "query": "platform=INSTAGRAM&from=2026-10-01&to=2026-10-02",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/accounts/own/analytics",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/accounts/own/posts",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02&page=1&page_size=20&sort=posted_at&order=desc",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/accounts/own/posts",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02&page=1&page_size=20&sort=posted_at&order=desc",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/accounts/own/analytics",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/accounts/own/posts",
+    "query": "platform=INSTAGRAM&from=2026-10-01&to=2026-10-02&page=1&page_size=20&sort=posted_at&order=desc",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/accounts/own/analytics",
+    "query": "platform=INSTAGRAM&from=2026-10-01&to=2026-10-02",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/accounts/own/analytics",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-03",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/accounts/own/posts",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-03&page=1&page_size=20&sort=posted_at&order=desc",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/accounts/own/posts",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-03&page=1&page_size=20&sort=posted_at&order=desc",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/accounts/own/analytics",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-03",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/trends/ranking",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03&topic_id=48b33a1e-045c-4e87-a788-5bc3170aaf64",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/trends/48b33a1e-045c-4e87-a788-5bc3170aaf64/top-posts",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/trends/48b33a1e-045c-4e87-a788-5bc3170aaf64/top-posts",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/trends/ranking",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03&topic_id=48b33a1e-045c-4e87-a788-5bc3170aaf64",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/trends/ranking",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03&topic_id=6527d84b-b0b7-45bd-845d-bc8349b12874",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/trends/6527d84b-b0b7-45bd-845d-bc8349b12874/top-posts",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/trends/ranking",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03&topic_id=6527d84b-b0b7-45bd-845d-bc8349b12874",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/trends/6527d84b-b0b7-45bd-845d-bc8349b12874/top-posts",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/trends/ranking",
+    "query": "platform=INSTAGRAM&from=2026-09-04&to=2026-10-03&topic_id=6527d84b-b0b7-45bd-845d-bc8349b12874",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/trends/6527d84b-b0b7-45bd-845d-bc8349b12874/top-posts",
+    "query": "platform=INSTAGRAM&from=2026-09-04&to=2026-10-03",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/trends/ranking",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03&topic_id=48b33a1e-045c-4e87-a788-5bc3170aaf64",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/trends/48b33a1e-045c-4e87-a788-5bc3170aaf64/top-posts",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/trends/ranking",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03&topic_id=48b33a1e-045c-4e87-a788-5bc3170aaf64",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/trends/48b33a1e-045c-4e87-a788-5bc3170aaf64/top-posts",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/trends/ranking",
+    "query": "platform=INSTAGRAM&from=2026-09-04&to=2026-10-03&topic_id=6527d84b-b0b7-45bd-845d-bc8349b12874",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/trends/6527d84b-b0b7-45bd-845d-bc8349b12874/top-posts",
+    "query": "platform=INSTAGRAM&from=2026-09-04&to=2026-10-03",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/trends/ranking",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02&topic_id=48b33a1e-045c-4e87-a788-5bc3170aaf64",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/trends/48b33a1e-045c-4e87-a788-5bc3170aaf64/top-posts",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/trends/48b33a1e-045c-4e87-a788-5bc3170aaf64/top-posts",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/trends/ranking",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02&topic_id=48b33a1e-045c-4e87-a788-5bc3170aaf64",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/competitors/analytics",
+    "query": "platform=INSTAGRAM&from=2026-09-04&to=2026-10-03&account_ids=ae265255-a938-4b48-bd9f-b3c1a347c35e",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/competitors/top-posts",
+    "query": "platform=INSTAGRAM&from=2026-09-04&to=2026-10-03&account_ids=ae265255-a938-4b48-bd9f-b3c1a347c35e",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/competitors/topic-distribution",
+    "query": "platform=INSTAGRAM&from=2026-09-04&to=2026-10-03&account_ids=ae265255-a938-4b48-bd9f-b3c1a347c35e",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/competitors/analytics",
+    "query": "platform=INSTAGRAM&from=2026-09-04&to=2026-10-03&account_ids=ae265255-a938-4b48-bd9f-b3c1a347c35e",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/competitors/top-posts",
+    "query": "platform=INSTAGRAM&from=2026-09-04&to=2026-10-03&account_ids=ae265255-a938-4b48-bd9f-b3c1a347c35e",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/competitors/topic-distribution",
+    "query": "platform=INSTAGRAM&from=2026-09-04&to=2026-10-03&account_ids=ae265255-a938-4b48-bd9f-b3c1a347c35e",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/competitors/analytics",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02&account_ids=43c58a28-23e9-491a-b6c5-baacb8227bcd",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/competitors/top-posts",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02&account_ids=43c58a28-23e9-491a-b6c5-baacb8227bcd",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/competitors/topic-distribution",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02&account_ids=43c58a28-23e9-491a-b6c5-baacb8227bcd",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/competitors/analytics",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02&account_ids=43c58a28-23e9-491a-b6c5-baacb8227bcd",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/competitors/top-posts",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02&account_ids=43c58a28-23e9-491a-b6c5-baacb8227bcd",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/competitors/topic-distribution",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02&account_ids=43c58a28-23e9-491a-b6c5-baacb8227bcd",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/gap-analysis",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/gap-analysis",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/gap-analysis",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/gap-analysis",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/gap-analysis",
+    "query": "platform=INSTAGRAM&from=2026-09-04&to=2026-10-03",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/gap-analysis",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/gap-analysis",
+    "query": "platform=ALL&from=2026-09-04&to=2026-10-03",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/gap-analysis",
+    "query": "platform=INSTAGRAM&from=2026-09-04&to=2026-10-03",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/gap-analysis",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/gap-analysis",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/gap-analysis",
+    "query": "platform=ALL&from=2026-10-04&to=2026-10-03",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/gap-analysis",
+    "query": "platform=ALL&from=2026-10-04&to=2026-10-03",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/gap-analysis",
+    "query": "platform=ALL&from=2026-10-04&to=2026-10-03",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/gap-analysis",
+    "query": "platform=ALL&from=2026-10-04&to=2026-10-03",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/gap-analysis",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/insights/latest",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/gap-analysis",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/insights/latest",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/insights/latest",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/insights/latest",
+    "query": "platform=INSTAGRAM&from=2026-10-01&to=2026-10-02",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/insights/latest",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/insights/latest",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/insights/latest",
+    "query": "platform=ALL&from=2026-10-01&to=2026-10-02",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/insights/latest",
+    "query": "platform=INSTAGRAM&from=2026-10-01&to=2026-10-02",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/insights/latest",
+    "query": "platform=ALL&from=2026-09-30&to=2026-10-03",
+    "kind": "REQUEST"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/insights/latest",
+    "query": "platform=ALL&from=2026-09-30&to=2026-10-03",
+    "kind": "COMPLETED"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/insights/latest",
+    "kind": "REQUEST",
+    "query": "platform=ALL&from=2026-09-30&to=2026-10-03"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/insights/latest",
+    "kind": "COMPLETED",
+    "query": "platform=ALL&from=2026-09-30&to=2026-10-03"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/insights/latest",
+    "kind": "REQUEST",
+    "query": "platform=ALL&from=2026-09-30&to=2026-10-03"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/insights/latest",
+    "kind": "REQUEST",
+    "query": "platform=INSTAGRAM&from=2026-09-30&to=2026-10-03"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/insights/latest",
+    "kind": "COMPLETED",
+    "query": "platform=ALL&from=2026-09-30&to=2026-10-03"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/insights/latest",
+    "kind": "COMPLETED",
+    "query": "platform=INSTAGRAM&from=2026-09-30&to=2026-10-03"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/insights/latest",
+    "kind": "REQUEST",
+    "query": "platform=INSTAGRAM&from=2026-09-30&to=2026-10-03"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/insights/latest",
+    "kind": "REQUEST",
+    "query": "platform=ALL&from=2026-09-30&to=2026-10-03"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000114/insights/latest",
+    "kind": "COMPLETED",
+    "query": "platform=ALL&from=2026-09-30&to=2026-10-03"
+  },
+  {
+    "path": "/api/v1/projects/00000000-0000-4000-8000-000000000113/insights/latest",
+    "kind": "COMPLETED",
+    "query": "platform=INSTAGRAM&from=2026-09-30&to=2026-10-03"
+  }
+]

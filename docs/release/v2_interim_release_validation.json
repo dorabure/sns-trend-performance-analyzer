@@ -1,0 +1,80 @@
+{
+  "version": "2.0 Interim",
+  "date": "2026-10-06",
+  "phase": 13,
+  "status": "Complete",
+  "phase14": "GO",
+  "git_head": "e2ad3848105687fb1b48c872e48d15d9315b3b97",
+  "archive_source": "validated working tree, not HEAD-only",
+  "backend_full_runs": [
+    {
+      "passed": 1631,
+      "seconds": 375.85,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "passed": 1631,
+      "seconds": 323.42,
+      "failed": 0,
+      "skipped": 0
+    }
+  ],
+  "frontend": {
+    "passed": 84,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "duration_ms": 6932.18977
+  },
+  "typecheck": "Success",
+  "build": "Success",
+  "openapi_paths": 47,
+  "alembic_head": "0005_v2_provider_core",
+  "migration_sha256": {
+    "backend/alembic/versions/0001_initial_create_initial_schema.py": "508943d4824451b8faa66df5105198d44002c5143a4520199d0891cb1af8570a",
+    "backend/alembic/versions/0002_v2_data_mode_and_providers.py": "d8666dc8525a59dbb9c1219bb01613afbc92b8de49f732ea21cf48ff91d7a450",
+    "backend/alembic/versions/0003_v2_background_job_foundation.py": "d64604a6a62f4c107e251695fe4fe68bbd99a94290f8a310494a6ff5e2d0dece",
+    "backend/alembic/versions/0004_v2_scheduler_job_operations.py": "bbfd2da2c836cc37f47089e1169e885c5a79ac3f56871a4b0beb18fe0bbbc628",
+    "backend/alembic/versions/0005_v2_provider_core_provenance.py": "bb213e3acb5f10c047b335135fd0ff941b18a0b7341060c3375831329e02db38"
+  },
+  "zip": "SNS_Analyzer_V2_Phase13.zip",
+  "zip_sha256": null,
+  "zip_sha256_source": "SNS_Analyzer_V2_Phase13.sha256",
+  "zip_sha256_note": "The final digest is sealed externally to avoid self-reference in the manifest included in the ZIP.",
+  "external_call_counts": {
+    "X": 0,
+    "Instagram": 0,
+    "OpenAI": 0
+  },
+  "x_status": "Complete / previously real-verified",
+  "instagram_status": "Deferred / OAuth and Profile foundation only",
+  "data_safety": {
+    "normal_mutations": 0,
+    "private_mutations": 0,
+    "private_ciphertext": "unchanged"
+  },
+  "known_limitations": [
+    "OWN retained-match per-post SELECT remains",
+    "Real X availability not revalidated in Phase13",
+    "Private verification; not public multi-user service",
+    "No 24/7 operation claim",
+    "Real refresh not called in Phase13",
+    "No real Instagram call; no Media/Insights implementation",
+    "OWN_POSTS=false; OWN_METRICS=false",
+    "No multi-user authentication",
+    "Not exactly-once execution",
+    "No per-user Beat entries",
+    "Real OpenAI quality not revalidated; fake browser generation",
+    "No polling or own project context",
+    "No arbitrary pair comparison or semantic diff",
+    "Local measurements; no production SLA; <=300s stretch not met",
+    "Raw saved SNS/AI content is not translated",
+    "Fictional fixed demo; not real AI output",
+    "No cloud production deployment or full observability stack",
+    "Dedicated screen-reader audio test not performed",
+    "Phase12 normal pre-recreation hashes remain historically unproven; Phase13 before/after hashes are proven",
+    "Private post exact-value scan has no qualifying strings (>=8 characters); do not claim complete post-text scanning"
+  ],
+  "resolved_manifest_companion": "SNS_Analyzer_V2_Phase13.release_validation.json"
+}

@@ -1,0 +1,7 @@
+{
+  "fake_browser_containers_removed": true,
+  "fresh_cluster_remaining_test_databases": 0,
+  "normal_containers": "remain stopped; no normal volume operations",
+  "private_containers": "preserved; no recreation",
+  "dedicated_public_project_cleanup": "after final extracted-RC verification only its own project/volumes are removed"
+}

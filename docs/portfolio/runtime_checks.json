@@ -1,0 +1,177 @@
+{
+  "clean": {
+    "db_counts": {
+      "sns_posts": 5220,
+      "post_metrics": 5220,
+      "post_topics": 5372,
+      "post_terms": 10124,
+      "trend_daily": 3240,
+      "account_metrics": 450,
+      "import_histories": 4,
+      "ai_insights": 1,
+      "watch_topics": 6,
+      "watch_terms": 12,
+      "sns_accounts": 5
+    },
+    "queries": {
+      "own_list": {
+        "select_count": 3,
+        "seconds": 0.05142330500166281
+      },
+      "trend_ranking": {
+        "select_count": 5,
+        "seconds": 0.012613431998033775
+      },
+      "popular_posts": {
+        "select_count": 5,
+        "seconds": 0.04297229599978891
+      },
+      "competitor_top": {
+        "select_count": 4,
+        "seconds": 0.05450766400099383
+      },
+      "gap": {
+        "select_count": 6,
+        "seconds": 0.022021976998075843
+      },
+      "overview": {
+        "select_count": 16,
+        "seconds": 0.1808695460022136
+      }
+    },
+    "gap_classes": [
+      "BALANCED",
+      "HIGH_COVERAGE",
+      "LOW_PRIORITY",
+      "OPPORTUNITY"
+    ],
+    "gap_zero": 2,
+    "gap_null": 1,
+    "top_trends": [
+      {
+        "topic": "生成AI",
+        "platform": "INSTAGRAM",
+        "score": 97.87
+      },
+      {
+        "topic": "業務効率化",
+        "platform": "X",
+        "score": 92.12
+      },
+      {
+        "topic": "生成AI",
+        "platform": "X",
+        "score": 91.77
+      },
+      {
+        "topic": "業務効率化",
+        "platform": "INSTAGRAM",
+        "score": 90.09
+      },
+      {
+        "topic": "SNS運用",
+        "platform": "X",
+        "score": 68.59
+      }
+    ],
+    "ai_payload_bytes": 10241,
+    "business_tables": 13,
+    "processing_imports": 0,
+    "disposable_databases": []
+  },
+  "openapi_paths": {
+    "normal": 26,
+    "clean": 26
+  },
+  "date": "2026-10-04",
+  "normal": {
+    "db_counts": {
+      "sns_posts": 5220,
+      "post_metrics": 5220,
+      "post_topics": 5372,
+      "post_terms": 10124,
+      "trend_daily": 3240,
+      "account_metrics": 450,
+      "import_histories": 4,
+      "ai_insights": 1,
+      "watch_topics": 6,
+      "watch_terms": 12,
+      "sns_accounts": 5
+    },
+    "queries": {
+      "own_list": {
+        "select_count": 3,
+        "seconds": 0.05681109100260073
+      },
+      "trend_ranking": {
+        "select_count": 5,
+        "seconds": 0.013244990001112456
+      },
+      "popular_posts": {
+        "select_count": 5,
+        "seconds": 0.048649981999915326
+      },
+      "competitor_top": {
+        "select_count": 4,
+        "seconds": 0.05114296299871057
+      },
+      "gap": {
+        "select_count": 6,
+        "seconds": 0.01678455799992662
+      },
+      "overview": {
+        "select_count": 16,
+        "seconds": 0.15194051299840794
+      }
+    },
+    "gap_classes": [
+      "BALANCED",
+      "HIGH_COVERAGE",
+      "LOW_PRIORITY",
+      "OPPORTUNITY"
+    ],
+    "gap_zero": 2,
+    "gap_null": 1,
+    "top_trends": [
+      {
+        "topic": "生成AI",
+        "platform": "INSTAGRAM",
+        "score": 97.87
+      },
+      {
+        "topic": "業務効率化",
+        "platform": "X",
+        "score": 92.12
+      },
+      {
+        "topic": "生成AI",
+        "platform": "X",
+        "score": 91.77
+      },
+      {
+        "topic": "業務効率化",
+        "platform": "INSTAGRAM",
+        "score": 90.09
+      },
+      {
+        "topic": "SNS運用",
+        "platform": "X",
+        "score": 68.59
+      }
+    ],
+    "ai_payload_bytes": 10241,
+    "business_tables": 13,
+    "processing_imports": 0,
+    "disposable_databases": []
+  },
+  "health": {
+    "normal": {
+      "status": "ok",
+      "database": "connected"
+    },
+    "clean": {
+      "status": "ok",
+      "database": "connected"
+    }
+  }
+}

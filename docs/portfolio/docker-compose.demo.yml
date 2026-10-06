@@ -1,0 +1,31 @@
+# Public demo port override. Use together with the repository docker-compose.yml.
+# Requires Docker Compose 2.24.4+ (!override support).
+services:
+  db:
+    ports: !override
+      - "127.0.0.1:15414:5432"
+  backend:
+    ports: !override
+      - "127.0.0.1:18014:8000"
+    environment:
+      FRONTEND_ORIGIN: http://localhost:13014
+      LIVE_MODE_ENABLED: "false"
+      OPENAI_API_KEY: ""
+      X_OAUTH_BOOTSTRAP_ENABLED: "false"
+      X_LIVE_SMOKE_ENABLED: "false"
+      X_LIVE_REFRESH_SMOKE_ENABLED: "false"
+      INSTAGRAM_OAUTH_BOOTSTRAP_ENABLED: "false"
+      INSTAGRAM_LIVE_SMOKE_ENABLED: "false"
+      INSTAGRAM_LIVE_REFRESH_SMOKE_ENABLED: "false"
+  frontend:
+    ports: !override
+      - "127.0.0.1:13014:3000"
+    build:
+      args:
+        NEXT_PUBLIC_API_BASE_URL: http://localhost:18014
+  worker:
+    environment:
+      LIVE_MODE_ENABLED: "false"
+  beat:
+    environment:
+      LIVE_MODE_ENABLED: "false"

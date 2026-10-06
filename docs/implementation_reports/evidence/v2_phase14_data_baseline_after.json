@@ -1,0 +1,138 @@
+{
+  "captured_at": "2026-10-06T03:06:21.992298+00:00",
+  "profiles": {
+    "private": {
+      "tables": {
+        "account_metrics": {
+          "count": 3,
+          "sha256": "c86872dfd4c22ff3d8a74d780e35959f6178443b321bda9e390d4bad2a56d251"
+        },
+        "ai_insights": {
+          "count": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "alembic_version": {
+          "count": 1,
+          "sha256": "f093c80b387953478a4806428ec48034ff91c200c20a8e2a64ea6fcc53ed9771"
+        },
+        "import_histories": {
+          "count": 8,
+          "sha256": "59ae68f50d31e5deab2cf7d3ee6b409b4c9cf771e65dabae855e8da644ef501f"
+        },
+        "job_runs": {
+          "count": 4,
+          "sha256": "e2708b70eed84a4bddd67bf82635dde0ad7a1f1af502965612d269a509cf6fca"
+        },
+        "job_schedules": {
+          "count": 1,
+          "sha256": "421ee705aee6ddfeb9b8acc5974298ce50797b8762f23c25b0774a6532398082"
+        },
+        "job_steps": {
+          "count": 16,
+          "sha256": "a7e5b6042d4faa49e9c99d644cc66e62c786562619b1c445e4752936d0c87bb7"
+        },
+        "post_metrics": {
+          "count": 1,
+          "sha256": "1f980c77fe77a678be43297d8e1981eae967fac87ebe797ebf131dd6a8dcb181"
+        },
+        "post_terms": {
+          "count": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "post_topics": {
+          "count": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "project_platforms": {
+          "count": 2,
+          "sha256": "ceb00431d1f1eb83f2b3a2695eb48f73897c70da43e001a7d10f5ab4f50b562e"
+        },
+        "projects": {
+          "count": 2,
+          "sha256": "3877abe54e5d778b375020b140356c5929a90db524d7893089c3acd6e7c085e3"
+        },
+        "provider_connections": {
+          "count": 4,
+          "sha256": "3d23458dfabdd2f2b83715886052b098f2b6c681b45d34dea80cefb963ab2eb6"
+        },
+        "provider_sync_states": {
+          "count": 6,
+          "sha256": "b72b6fb085c5cda9af6b096825f6d3be0bacbf0adb0e52259c1f4da2000bfc25"
+        },
+        "sns_accounts": {
+          "count": 2,
+          "sha256": "bf4367ccd8e12149bf9b1bce0a1683ecef733113aea26109964eb4f29cd11ce7"
+        },
+        "sns_posts": {
+          "count": 1,
+          "sha256": "619bbfcc4dec2b79303d9b932db924a39103cfb9078e58e49a62bebf1aeac6d6"
+        },
+        "trend_daily": {
+          "count": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "watch_terms": {
+          "count": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "watch_topics": {
+          "count": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "alembic_version": "0005_v2_provider_core",
+      "enabled_schedules": 0,
+      "active_jobs": 0,
+      "provider_connections": [
+        {
+          "provider_type": "INSTAGRAM_API",
+          "status": "NOT_CONFIGURED",
+          "enabled": false,
+          "capabilities": []
+        },
+        {
+          "provider_type": "X_API",
+          "status": "CONNECTED",
+          "enabled": true,
+          "capabilities": [
+            "ACCOUNT_PROFILE",
+            "OWN_METRICS",
+            "OWN_POSTS"
+          ]
+        },
+        {
+          "provider_type": "INSTAGRAM_API",
+          "status": "NOT_CONFIGURED",
+          "enabled": false,
+          "capabilities": []
+        },
+        {
+          "provider_type": "X_API",
+          "status": "CONNECTED",
+          "enabled": true,
+          "capabilities": [
+            "ACCOUNT_PROFILE",
+            "OWN_METRICS",
+            "OWN_POSTS"
+          ]
+        }
+      ],
+      "provider_sync_states": 6,
+      "ai_insights": 0,
+      "project_modes": {
+        "DEMO": 0,
+        "LIVE": 2
+      },
+      "ciphertext": {
+        "c83dbfdab00d0eaf669ec57cbb406801b2a8007783518adacd0207e3651c4fab.enc": "a9ad75e3ae3532f485ea125f4c53a59e04677db32a33b2292a17db97fbaf61e8"
+      },
+      "secret_permissions": {
+        "directory": "700",
+        "files": [
+          "600"
+        ]
+      }
+    }
+  },
+  "openapi_paths": 47
+}

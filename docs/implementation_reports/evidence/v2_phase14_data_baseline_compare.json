@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "private": {
+      "unexpected_mutations": 0,
+      "changed_tables": [],
+      "metadata_unchanged": true
+    }
+  },
+  "openapi_unchanged": true
+}

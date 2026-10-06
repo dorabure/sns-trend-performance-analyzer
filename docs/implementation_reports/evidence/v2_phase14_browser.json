@@ -1,0 +1,161 @@
+{
+  "ja": [
+    {
+      "screen": "Overview",
+      "posts": 180,
+      "reach": 93392,
+      "engagement": 6928
+    },
+    {
+      "screen": "My Account",
+      "posts": 180,
+      "reach": 93392,
+      "null_and_zero_visible": true
+    },
+    {
+      "screen": "Trend Explorer",
+      "ranking_rows": 4,
+      "comparison_series": 2
+    },
+    {
+      "screen": "Competitor",
+      "own_accounts": 2,
+      "competitors": 3,
+      "accounts": 5
+    },
+    {
+      "screen": "Gap Analysis",
+      "rows": 12,
+      "known_points": 11,
+      "unknown_rows": 1,
+      "opportunity": 88.083
+    },
+    {
+      "screen": "AI Insights",
+      "saved_fake": true
+    },
+    {
+      "screen": "Settings / Import",
+      "successful_imports": 4,
+      "row_errors": 0
+    }
+  ],
+  "en": [
+    {
+      "screen": "Settings / Import",
+      "successful_imports": 4
+    },
+    {
+      "screen": "Overview",
+      "posts": 180,
+      "reach": 93392
+    },
+    {
+      "screen": "My Account",
+      "heading": "My Account",
+      "data_loaded": true
+    },
+    {
+      "screen": "Trend Explorer",
+      "heading": "Trend Explorer",
+      "data_loaded": true
+    },
+    {
+      "screen": "Gap Analysis",
+      "heading": "Gap Analysis",
+      "data_loaded": true
+    },
+    {
+      "screen": "AI Insights",
+      "heading": "AI Insights",
+      "data_loaded": true
+    },
+    {
+      "screen": "Competitor",
+      "accounts": 5,
+      "data_loaded": true
+    }
+  ],
+  "responsive": [
+    {
+      "screen": "Competitor",
+      "viewport": 390,
+      "client": 375,
+      "scroll": 375,
+      "table_rows": 26,
+      "page_overflow": 0
+    },
+    {
+      "screen": "Overview",
+      "viewport": 768,
+      "client": 753,
+      "scroll": 753,
+      "page_overflow": 0
+    },
+    {
+      "screen": "Providers",
+      "viewport": 768,
+      "client": 753,
+      "scroll": 753,
+      "page_overflow": 0
+    },
+    {
+      "screen": "AI Compare",
+      "viewport": 390,
+      "client": 375,
+      "scroll": 375,
+      "grid": "285.6px",
+      "page_overflow": 0
+    }
+  ],
+  "ai": [
+    {
+      "saved_report": true,
+      "no_api_key": true,
+      "generate_disabled": true,
+      "history_count": 1,
+      "previous_none": true,
+      "evidence_open": true
+    },
+    {
+      "fixture": "Phase11 Fake History",
+      "latest": 12,
+      "previous": 11,
+      "external_calls": 0
+    },
+    {
+      "history_loaded": 12,
+      "legacy_selected": 1,
+      "legacy_previous_none": true,
+      "latest_stays": 12
+    }
+  ],
+  "providers": [
+    {
+      "provider": "X",
+      "fixture": "fictional",
+      "profile": true,
+      "own_posts": true,
+      "own_metrics": true,
+      "secret_values_visible": false
+    },
+    {
+      "provider": "Instagram",
+      "fixture": "fictional",
+      "status": "Deferred",
+      "profile": true,
+      "own_posts": false,
+      "own_metrics": false,
+      "manual_sync_disabled": true
+    }
+  ],
+  "public_live": {
+    "empty": true,
+    "no_demo_fallback": true,
+    "live_enabled": false
+  },
+  "console": {
+    "public": [],
+    "fake": []
+  }
+}

@@ -1,0 +1,75 @@
+"use client";
+import Link from 'next/link';
+import { useProjectScope, useFeatureProject, FeatureGate } from './project-scope';
+import { t as tr, displayLabel, intlLocale, errorText } from '../i18n';
+import { useLocale } from '../i18n/react';
+import OverviewLink from './overview-link';
+import AIInsightsLink from './ai-insights-link';
+
+import { scopedCriteria, period, parseCriteria, normalized, formCriteria, validPeriod, criteriaQuery, replaceQuery } from '../lib/analysis-filters';
+import { useRead } from '../lib/use-analysis-read';
+
+import { FormEvent, ReactNode, useCallback, useEffect, useState } from "react";
+import { CartesianGrid, Legend, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { api, ApiError, Project, WatchTopic } from "../lib/api";
+import { trendsApi, TrendMetric, Timeseries } from "../lib/trends-api";
+
+const show = (n: number | null | undefined) => n == null ? "—" : n.toLocaleString(intlLocale(), { maximumFractionDigits: 4 });
+const pct = (n: number | null) => n === null ? "—" : `${show(n)}%`;
+const colors = ["#0f766e", "#7c3aed", "#2563eb", "#be123c", "#a16207", "#0891b2", "#c026d3", "#4d7c0f", "#ea580c", "#475569"];
+type Criteria = { platform: string; from: string; to: string; keyword: string };
+function query(c: Criteria) { return criteriaQuery(c, c.keyword ? {keyword:c.keyword} : {}); }
+function Field({ label, children }: { label: string; children: ReactNode }) {
+  useLocale(); return <label className="grid gap-2 text-sm font-medium text-slate-700">{displayLabel(label)}{children}</label>; }
+function Section({ title, children }: { title: string; children: ReactNode }) {
+  useLocale(); return <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"><h2 className="mb-5 text-lg font-semibold">{title}</h2>{children}</section>; }
+function Empty({ children }: { children: ReactNode }) {
+  useLocale(); const {selectedMode} = useProjectScope(); return <p className="text-sm text-slate-600">{selectedMode === 'LIVE' ? tr('availability.NoData') : children} <Link className="text-teal-800 underline" href={selectedMode === 'LIVE' ? '/dashboard/settings?tab=providers' : '/dashboard/settings?tab=import'}>{tr('common.goSettings')}</Link></p>; }
+type ReadState = { loading: boolean; error: string; reload: () => Promise<void> };
+function Status({ state, children }: { state: ReadState; children: ReactNode }) {
+  useLocale(); return state.loading ? <div role="status" aria-label={tr('common.loadingLabel')} className="animate-pulse space-y-3"><div className="h-8 rounded bg-slate-100" /><div className="h-20 rounded bg-slate-100" /><p className="text-sm text-slate-500">{tr('common.loading')}</p></div> : state.error ? <div role="alert" className="rounded bg-red-50 p-4 text-red-800">{state.error}<button className="ml-3" onClick={() => void state.reload()}>{tr('common.retry')}</button></div> : <>{children}</>; }
+
+export default function TrendExplorer() {
+  useLocale();
+  const scope = useProjectScope(); const projects = {data:scope.projects,loading:scope.loading,error:scope.error,reload:scope.reload}; const [initial, setInitial] = useState<Criteria | null>(null);
+  useEffect(() => { const p = new URLSearchParams(window.location.search); setInitial({ ...parseCriteria(p), keyword: p.get("keyword") ?? "" }); }, []);
+
+  const selected = useFeatureProject('trends');
+  return <main className="mx-auto max-w-7xl px-5 py-10"><header className="mb-8 flex flex-wrap justify-between gap-5"><div><p className="text-xs font-bold tracking-widest text-teal-700">SNS TREND &amp; PERFORMANCE ANALYZER</p><h1 className="mt-3 text-3xl font-bold">{tr('nav.trends')}</h1><p className="mt-2 text-slate-600">{tr('trends.description')}</p></div><nav className="flex flex-wrap gap-4 text-sm text-teal-800 underline"><OverviewLink/><AIInsightsLink/><Link href="/dashboard/gap">{tr('nav.gap')}</Link><Link href="/dashboard/competitors">{tr('nav.competitor')}</Link><Link href="/dashboard/my-account">{tr('nav.account')}</Link><Link href="/dashboard/settings">{tr('nav.settings')}</Link><Link href="/">{tr('nav.health')}</Link></nav></header>
+
+    <Status state={projects}>{!initial ? <p role="status">{tr('common.loading')}</p> : selected ? <FeatureGate feature="trends"><TopicScope key={selected.project_id} project={selected} initial={normalized(selected, initial)} onCriteria={setInitial} /></FeatureGate> : <Empty>{tr('common.createProjectFirst')}</Empty>}</Status>
+  </main>;
+}
+
+function TopicScope({ project, initial, onCriteria }: { project: Project; initial: Criteria; onCriteria: (c: Criteria) => void }) {
+  useLocale();
+  const topics = useRead(useCallback(() => api.topics(project.project_id), [project.project_id])); const [topicId, setTopicId] = useState("");
+  const active = topics.data?.filter(t => t.is_active) ?? [];
+  useEffect(() => { if (topics.data) setTopicId(current => topics.data!.some(t => t.is_active && t.topic_id === current) ? current : topics.data!.find(t => t.is_active)?.topic_id ?? ""); }, [topics.data]);
+  const topic = active.find(t => t.topic_id === topicId);
+  return <div className="space-y-6"><div className="max-w-md"><Field label={tr('common.topic')}><select value={topicId} disabled={topics.loading} onChange={e => setTopicId(e.target.value)}><option value="" disabled>{tr('trends.chooseTopic')}</option>{active.map(t => <option key={t.topic_id} value={t.topic_id}>{t.topic_name}</option>)}</select></Field></div><Status state={topics}>{topic ? <FeatureGate feature="trends"><Analysis key={topic.topic_id} project={project} topic={topic} initial={initial} onCriteria={onCriteria} /></FeatureGate> : <Empty>{tr('trends.setup')}</Empty>}</Status></div>;
+}
+
+function Analysis({ project, topic, initial, onCriteria }: { project: Project; topic: WatchTopic; initial: Criteria; onCriteria: (c: Criteria) => void }) {
+  useLocale();
+  const [draft, setDraft] = useState(initial); const [criteria, setCriteria] = useState(initial); const [preset, setPreset] = useState("custom"); const [validation, setValidation] = useState("");
+  const [terms, setTerms] = useState<string[]>([]); const [metric, setMetric] = useState<TrendMetric>("post_count"); const [popularTerm, setPopularTerm] = useState("");
+  const termKey = terms.join(","); const q = query(criteria);
+  useEffect(() => { replaceQuery(q); onCriteria(criteria); }, [q, criteria, onCriteria]); const available = topic.terms.filter(t => t.is_active);
+  const ranking = useRead(useCallback(() => trendsApi.ranking(project.project_id, topic.topic_id, q), [project.project_id, topic.topic_id, q]));
+  const timeseries = useRead(useCallback(() => trendsApi.timeseries(project.project_id, termKey.split(","), metric, q), [project.project_id, termKey, metric, q]), terms.length > 0);
+  const popular = useRead(useCallback(() => trendsApi.popular(project.project_id, topic.topic_id, popularTerm, q), [project.project_id, topic.topic_id, popularTerm, q]));
+  const submit = (e: FormEvent) => { e.preventDefault(); const actual = formCriteria(e.currentTarget as HTMLFormElement, draft); if (!validPeriod(actual)) { setValidation(tr('validation.period')); return; } setValidation(""); const next = { ...actual, keyword: draft.keyword.trim() }; setDraft(next); setCriteria(next); onCriteria(next); const url = new URL(window.location.href); url.search = query(next); window.history.replaceState(null,"",url); };
+  return <div className="space-y-6"><Section title={tr('analysis.conditions')}><form onSubmit={submit} className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4"><Field label={tr('common.platform')}><select value={draft.platform} onChange={e => setDraft(c => ({ ...c, platform: e.target.value }))}><option value="ALL">{tr('common.allPlatforms')}</option><option value="X" disabled={!project.platforms.includes("X")}>X</option><option value="INSTAGRAM" disabled={!project.platforms.includes("INSTAGRAM")}>Instagram</option></select></Field><Field label={tr('common.period')}><select value={preset} onChange={e => { setPreset(e.target.value); if (e.target.value !== "custom") setDraft(c => ({ ...c, ...period(Number(e.target.value)) })); }}><option value="7">{tr('common.last7')}</option><option value="30">{tr('common.last30')}</option><option value="90">{tr('common.last90')}</option><option value="custom">{tr('common.custom')}</option></select></Field>{(["from","to"] as const).map(name => <Field key={name} label={name === "from" ? tr('common.from') : tr('common.to')}><input type="date" name={name} required value={draft[name]} onChange={e => { setPreset("custom"); setDraft(c => ({ ...c, [name]: e.target.value })); }} /></Field>)}<Field label={tr('trends.keyword')}><input maxLength={1000} value={draft.keyword} onChange={e => setDraft(c => ({ ...c, keyword: e.target.value }))} /></Field><div className="flex items-end gap-2"><button className="primary" type="submit" disabled={ranking.loading || timeseries.loading || popular.loading}>{tr('common.search')}</button><button type="button" disabled={ranking.loading || timeseries.loading || popular.loading} onClick={() => { void ranking.reload(); void timeseries.reload(); void popular.reload(); }}>{tr('common.refresh')}</button></div></form>{validation && <p role="alert" className="mt-3 text-red-800">{validation}</p>}<p className="mt-4 text-xs text-slate-500">{tr('trends.filterNote')}</p></Section>
+    <Section title={tr('trends.ranking')}><p className="mb-4 text-sm text-slate-500">{tr('trends.rankingNote')}</p><Status state={ranking}>{!ranking.data?.items.length ? <Empty>{tr('trends.noRanking')}</Empty> : <><p className="mb-3 text-xs text-slate-500">{tr('label.latestSnapshot')} {ranking.data.score_as_of} {tr('trends.snapshotDateNote')}</p><div className="overflow-auto"><table><thead><tr>{["Rank","Keyword / Hashtag","SNS","Snapshot UTC","Post Count","Post Growth","Engagement Growth","Average Engagement","Trend Score","Direction"].map(h => <th key={h}>{displayLabel(h)}</th>)}</tr></thead><tbody>{ranking.data.items.map((r,i) => <tr key={`${r.term_id}-${r.platform}`}><td>{i+1}</td><td>{r.keyword}<p className="text-xs text-slate-500">{displayLabel(r.term_type)}</p></td><td>{r.platform}</td><td>{r.trend_date}</td><td>{show(r.post_count)}</td><td>{pct(r.post_growth_rate)}</td><td>{pct(r.engagement_growth_rate)}</td><td>{show(r.avg_engagement)}</td><td>{show(r.trend_score)}</td><td>{displayLabel(r.trend_direction)}</td></tr>)}</tbody></table></div></>}</Status></Section>
+    <Section title={tr('trends.comparison')}><fieldset><legend className="mb-3 text-sm">{tr('trends.chooseTerms')}</legend><div className="flex flex-wrap gap-4">{available.map(t => <label className="flex items-center gap-2 text-sm" key={t.term_id}><input type="checkbox" checked={terms.includes(t.term_id)} disabled={!terms.includes(t.term_id) && terms.length >= 5} onChange={e => setTerms(ids => e.target.checked ? [...ids,t.term_id] : ids.filter(id => id !== t.term_id))} />{t.term} ({displayLabel(t.term_type)})</label>)}</div></fieldset><div className="my-5 max-w-xs"><Field label={tr('trends.metric')}><select value={metric} onChange={e => setMetric(e.target.value as TrendMetric)}><option value="post_count">{tr('metric.postCount')}</option><option value="engagement">{tr('metric.engagement')}</option><option value="trend_score">{tr('metric.trendScore')}</option></select></Field></div><Status state={timeseries}>{terms.length === 0 ? <Empty>{tr('trends.noSelectedTerms')}</Empty> : !timeseries.data?.series.some(s => s.values.some(v => v.row_present)) ? <Empty>{tr('trends.noSeries')}</Empty> : <Comparison data={timeseries.data} />}</Status></Section>
+    <Section title={tr('trends.popular')}><div className="mb-5 max-w-md"><Field label={tr('trends.popularTerm')}><select value={popularTerm} onChange={e => setPopularTerm(e.target.value)}><option value="">{tr('trends.wholeTopic')}</option>{available.map(t => <option key={t.term_id} value={t.term_id}>{t.term}</option>)}</select></Field></div><p className="mb-4 text-xs text-slate-500">{tr('trends.popularNote')}</p><Status state={popular}>{!popular.data?.items.length ? <Empty>{tr('trends.noPopular')}</Empty> : <div className="overflow-auto"><table><thead><tr>{["Date UTC","SNS","Post","Media Type","Views","Engagement","Likes","Comments","Shares","Saves"].map(h => <th key={h}>{displayLabel(h)}</th>)}</tr></thead><tbody>{popular.data.items.map(p => { let safe: string | null = null; try { const url = new URL(p.permalink ?? ""); if (["http:","https:"].includes(url.protocol)) safe = url.href; } catch {} return <tr key={p.post_id}><td className="whitespace-nowrap">{new Date(p.posted_at).toLocaleString(intlLocale(),{timeZone:"UTC"})} UTC</td><td>{p.platform}</td><td><p className="w-56 truncate" title={p.text ?? ""}>{p.text ?? tr('common.noText')}</p>{safe && <a className="text-xs text-teal-800 underline" href={safe} target="_blank" rel="noreferrer">{tr('common.sourcePost')}</a>}</td><td>{p.media_type ? displayLabel(p.media_type) : tr('common.unset')}</td><td>{show(p.views)}</td><td>{show(p.engagement)}</td><td>{show(p.likes)}</td><td>{show(p.comments)}</td><td>{show(p.shares)}</td><td>{show(p.saves)}</td></tr>; })}</tbody></table></div>}</Status></Section>
+  </div>;
+}
+
+function Comparison({ data }: { data: Timeseries }) {
+  useLocale();
+  const dates = data.series[0]?.values.map(v => v.date) ?? [];
+  const rows = dates.map((date,i) => Object.fromEntries([["date",date], ...data.series.map((s,j) => [`series${j}`,s.values[i]?.value ?? null])]));
+  return <><p className="mb-3 text-xs text-slate-500">{tr('trends.seriesNote')}</p>{data.series.every(s => s.values.every(v => v.value === null)) && <p className="mb-3 text-sm text-slate-500">{tr('trends.allUnknown')}</p>}<div className="h-80 min-w-0" role="img" aria-label={tr('trends.seriesLabel',{metric:displayLabel(data.metric)})}><ResponsiveContainer width="100%" height="100%"><LineChart data={rows}><CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" /><XAxis dataKey="date" tickFormatter={d => String(d).slice(5)} minTickGap={32} /><YAxis /><Tooltip labelFormatter={d => `${d} UTC`} /><Legend />{data.series.map((s,i) => <Line key={`${s.term_id}-${s.platform}`} type="linear" dataKey={`series${i}`} name={`${s.term_name} / ${s.platform}`} stroke={colors[i%colors.length]} strokeDasharray={s.platform === "INSTAGRAM" ? "5 3" : undefined} connectNulls={false} dot={false} />)}</LineChart></ResponsiveContainer></div><details className="mt-4 text-sm"><summary className="cursor-pointer text-teal-800">{tr('trends.seriesDetails')}</summary><div className="mt-3 max-h-72 overflow-auto"><table><thead><tr><th>{tr('common.dateUtc')}</th>{data.series.map(s => <th key={`${s.term_id}-${s.platform}`}>{s.term_name} / {s.platform}</th>)}</tr></thead><tbody>{dates.map((date,i) => <tr key={date}><td>{date}</td>{data.series.map(s => <td key={`${s.term_id}-${s.platform}`}>{!s.values[i]?.row_present ? tr('trends.noRow') : s.values[i].value === null ? tr('trends.unavailable') : show(s.values[i].value)}</td>)}</tr>)}</tbody></table></div></details></>;
+}

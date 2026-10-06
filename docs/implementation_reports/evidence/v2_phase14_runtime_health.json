@@ -1,0 +1,1824 @@
+{
+  "health": {
+    "status": "ok",
+    "database": "connected"
+  },
+  "frontend_http": 200,
+  "openapi_paths": 47,
+  "alembic": "0005_v2_provider_core (head)",
+  "worker_pong": true,
+  "beat": {
+    "scheduler-tick": {
+      "task": "sns.scheduler_tick",
+      "schedule": 30
+    }
+  },
+  "overview": {
+    "timezone": "UTC",
+    "period": {
+      "from": "2026-07-07",
+      "to": "2026-10-04"
+    },
+    "previous_period": {
+      "from": "2026-04-08",
+      "to": "2026-07-06"
+    },
+    "kpis": {
+      "reach": {
+        "value": 93392,
+        "previous_value": null,
+        "change": null,
+        "change_rate": null
+      },
+      "engagement_rate": {
+        "value": null,
+        "previous_value": null,
+        "change_point": null,
+        "rate_groups": [
+          {
+            "platform": "INSTAGRAM",
+            "denominator_type": "reach",
+            "post_count": 88,
+            "avg_engagement_rate": 8.3276
+          },
+          {
+            "platform": "X",
+            "denominator_type": "reach",
+            "post_count": 88,
+            "avg_engagement_rate": 6.7875
+          }
+        ],
+        "previous_rate_groups": []
+      },
+      "followers": {
+        "value": null,
+        "previous_value": null,
+        "change": null,
+        "change_rate": null
+      },
+      "posts": {
+        "value": 180,
+        "previous_value": 0,
+        "change": 180,
+        "change_rate": null
+      },
+      "impressions": {
+        "value": 136256,
+        "previous_value": null,
+        "change": null,
+        "change_rate": null
+      },
+      "engagement": {
+        "value": 6928,
+        "previous_value": null,
+        "change": null,
+        "change_rate": null
+      },
+      "followers_by_account": [
+        {
+          "platform": "INSTAGRAM",
+          "account_id": "eaa32c6a-8102-5d24-b2f7-42fc42533590",
+          "account_name": "demo_own_instagram",
+          "recorded_date": "2026-10-04",
+          "followers": 1067
+        },
+        {
+          "platform": "X",
+          "account_id": "52c90201-7d14-52e5-a405-4abbebf5aed4",
+          "account_name": "demo_own_x",
+          "recorded_date": "2026-10-04",
+          "followers": 1467
+        }
+      ]
+    },
+    "performance_trend": {
+      "daily": [
+        {
+          "date": "2026-07-07",
+          "posts": 2,
+          "reach": 800,
+          "engagement": 56
+        },
+        {
+          "date": "2026-07-08",
+          "posts": 2,
+          "reach": 806,
+          "engagement": 64
+        },
+        {
+          "date": "2026-07-09",
+          "posts": 2,
+          "reach": 812,
+          "engagement": 72
+        },
+        {
+          "date": "2026-07-10",
+          "posts": 2,
+          "reach": 818,
+          "engagement": 74
+        },
+        {
+          "date": "2026-07-11",
+          "posts": 2,
+          "reach": 824,
+          "engagement": 74
+        },
+        {
+          "date": "2026-07-12",
+          "posts": 2,
+          "reach": 830,
+          "engagement": 72
+        },
+        {
+          "date": "2026-07-13",
+          "posts": 2,
+          "reach": 836,
+          "engagement": 74
+        },
+        {
+          "date": "2026-07-14",
+          "posts": 2,
+          "reach": 842,
+          "engagement": 82
+        },
+        {
+          "date": "2026-07-15",
+          "posts": 2,
+          "reach": 848,
+          "engagement": 82
+        },
+        {
+          "date": "2026-07-16",
+          "posts": 2,
+          "reach": 854,
+          "engagement": 84
+        },
+        {
+          "date": "2026-07-17",
+          "posts": 2,
+          "reach": 860,
+          "engagement": 82
+        },
+        {
+          "date": "2026-07-18",
+          "posts": 2,
+          "reach": 866,
+          "engagement": 90
+        },
+        {
+          "date": "2026-07-19",
+          "posts": 2,
+          "reach": 872,
+          "engagement": 84
+        },
+        {
+          "date": "2026-07-20",
+          "posts": 2,
+          "reach": 878,
+          "engagement": 92
+        },
+        {
+          "date": "2026-07-21",
+          "posts": 2,
+          "reach": 884,
+          "engagement": 100
+        },
+        {
+          "date": "2026-07-22",
+          "posts": 2,
+          "reach": 890,
+          "engagement": 62
+        },
+        {
+          "date": "2026-07-23",
+          "posts": 2,
+          "reach": 896,
+          "engagement": 62
+        },
+        {
+          "date": "2026-07-24",
+          "posts": 2,
+          "reach": 902,
+          "engagement": 70
+        },
+        {
+          "date": "2026-07-25",
+          "posts": 2,
+          "reach": 908,
+          "engagement": 72
+        },
+        {
+          "date": "2026-07-26",
+          "posts": 2,
+          "reach": 914,
+          "engagement": 80
+        },
+        {
+          "date": "2026-07-27",
+          "posts": 2,
+          "reach": 920,
+          "engagement": 70
+        },
+        {
+          "date": "2026-07-28",
+          "posts": 2,
+          "reach": 926,
+          "engagement": 72
+        },
+        {
+          "date": "2026-07-29",
+          "posts": 2,
+          "reach": 932,
+          "engagement": 80
+        },
+        {
+          "date": "2026-07-30",
+          "posts": 2,
+          "reach": 938,
+          "engagement": 88
+        },
+        {
+          "date": "2026-07-31",
+          "posts": 2,
+          "reach": 944,
+          "engagement": 82
+        },
+        {
+          "date": "2026-08-01",
+          "posts": 2,
+          "reach": 950,
+          "engagement": 80
+        },
+        {
+          "date": "2026-08-02",
+          "posts": 2,
+          "reach": 956,
+          "engagement": 88
+        },
+        {
+          "date": "2026-08-03",
+          "posts": 2,
+          "reach": 962,
+          "engagement": 90
+        },
+        {
+          "date": "2026-08-04",
+          "posts": 2,
+          "reach": 968,
+          "engagement": 90
+        },
+        {
+          "date": "2026-08-05",
+          "posts": 2,
+          "reach": 974,
+          "engagement": 98
+        },
+        {
+          "date": "2026-08-06",
+          "posts": 2,
+          "reach": 980,
+          "engagement": 60
+        },
+        {
+          "date": "2026-08-07",
+          "posts": 2,
+          "reach": 986,
+          "engagement": 68
+        },
+        {
+          "date": "2026-08-08",
+          "posts": 2,
+          "reach": 992,
+          "engagement": 68
+        },
+        {
+          "date": "2026-08-09",
+          "posts": 2,
+          "reach": 998,
+          "engagement": 70
+        },
+        {
+          "date": "2026-08-10",
+          "posts": 2,
+          "reach": 1004,
+          "engagement": 78
+        },
+        {
+          "date": "2026-08-11",
+          "posts": 2,
+          "reach": 1010,
+          "engagement": 76
+        },
+        {
+          "date": "2026-08-12",
+          "posts": 2,
+          "reach": 1016,
+          "engagement": 70
+        },
+        {
+          "date": "2026-08-13",
+          "posts": 2,
+          "reach": 1022,
+          "engagement": 78
+        },
+        {
+          "date": "2026-08-14",
+          "posts": 2,
+          "reach": 1028,
+          "engagement": 86
+        },
+        {
+          "date": "2026-08-15",
+          "posts": 2,
+          "reach": 1034,
+          "engagement": 88
+        },
+        {
+          "date": "2026-08-16",
+          "posts": 2,
+          "reach": 1040,
+          "engagement": 78
+        },
+        {
+          "date": "2026-08-17",
+          "posts": 2,
+          "reach": 1046,
+          "engagement": 86
+        },
+        {
+          "date": "2026-08-18",
+          "posts": 2,
+          "reach": 1052,
+          "engagement": 88
+        },
+        {
+          "date": "2026-08-19",
+          "posts": 2,
+          "reach": 1058,
+          "engagement": 96
+        },
+        {
+          "date": "2026-08-20",
+          "posts": 2,
+          "reach": 1064,
+          "engagement": 96
+        },
+        {
+          "date": "2026-08-21",
+          "posts": 2,
+          "reach": 1070,
+          "engagement": 58
+        },
+        {
+          "date": "2026-08-22",
+          "posts": 2,
+          "reach": 1076,
+          "engagement": 66
+        },
+        {
+          "date": "2026-08-23",
+          "posts": 2,
+          "reach": 1082,
+          "engagement": 74
+        },
+        {
+          "date": "2026-08-24",
+          "posts": 2,
+          "reach": 1088,
+          "engagement": 68
+        },
+        {
+          "date": "2026-08-25",
+          "posts": 2,
+          "reach": 1094,
+          "engagement": 76
+        },
+        {
+          "date": "2026-08-26",
+          "posts": 2,
+          "reach": 1100,
+          "engagement": 74
+        },
+        {
+          "date": "2026-08-27",
+          "posts": 2,
+          "reach": 1106,
+          "engagement": 76
+        },
+        {
+          "date": "2026-08-28",
+          "posts": 2,
+          "reach": 1112,
+          "engagement": 76
+        },
+        {
+          "date": "2026-08-29",
+          "posts": 2,
+          "reach": 1118,
+          "engagement": 84
+        },
+        {
+          "date": "2026-08-30",
+          "posts": 2,
+          "reach": 1124,
+          "engagement": 86
+        },
+        {
+          "date": "2026-08-31",
+          "posts": 2,
+          "reach": 1130,
+          "engagement": 84
+        },
+        {
+          "date": "2026-09-01",
+          "posts": 2,
+          "reach": 1136,
+          "engagement": 84
+        },
+        {
+          "date": "2026-09-02",
+          "posts": 2,
+          "reach": 1142,
+          "engagement": 86
+        },
+        {
+          "date": "2026-09-03",
+          "posts": 2,
+          "reach": 1148,
+          "engagement": 94
+        },
+        {
+          "date": "2026-09-04",
+          "posts": 2,
+          "reach": 1154,
+          "engagement": 102
+        },
+        {
+          "date": "2026-09-05",
+          "posts": 2,
+          "reach": 1160,
+          "engagement": 56
+        },
+        {
+          "date": "2026-09-06",
+          "posts": 2,
+          "reach": 1166,
+          "engagement": 64
+        },
+        {
+          "date": "2026-09-07",
+          "posts": 2,
+          "reach": 1172,
+          "engagement": 72
+        },
+        {
+          "date": "2026-09-08",
+          "posts": 2,
+          "reach": 1178,
+          "engagement": 74
+        },
+        {
+          "date": "2026-09-09",
+          "posts": 2,
+          "reach": 1184,
+          "engagement": 74
+        },
+        {
+          "date": "2026-09-10",
+          "posts": 2,
+          "reach": 1190,
+          "engagement": 72
+        },
+        {
+          "date": "2026-09-11",
+          "posts": 2,
+          "reach": 1196,
+          "engagement": 74
+        },
+        {
+          "date": "2026-09-12",
+          "posts": 2,
+          "reach": 1202,
+          "engagement": 82
+        },
+        {
+          "date": "2026-09-13",
+          "posts": 2,
+          "reach": 1208,
+          "engagement": 82
+        },
+        {
+          "date": "2026-09-14",
+          "posts": 2,
+          "reach": 1214,
+          "engagement": 84
+        },
+        {
+          "date": "2026-09-15",
+          "posts": 2,
+          "reach": 1220,
+          "engagement": 82
+        },
+        {
+          "date": "2026-09-16",
+          "posts": 2,
+          "reach": 1226,
+          "engagement": 90
+        },
+        {
+          "date": "2026-09-17",
+          "posts": 2,
+          "reach": 1232,
+          "engagement": 84
+        },
+        {
+          "date": "2026-09-18",
+          "posts": 2,
+          "reach": 1238,
+          "engagement": 92
+        },
+        {
+          "date": "2026-09-19",
+          "posts": 2,
+          "reach": 1244,
+          "engagement": 100
+        },
+        {
+          "date": "2026-09-20",
+          "posts": 2,
+          "reach": 1250,
+          "engagement": 62
+        },
+        {
+          "date": "2026-09-21",
+          "posts": 2,
+          "reach": 1256,
+          "engagement": 62
+        },
+        {
+          "date": "2026-09-22",
+          "posts": 2,
+          "reach": 1262,
+          "engagement": 70
+        },
+        {
+          "date": "2026-09-23",
+          "posts": 2,
+          "reach": 1268,
+          "engagement": 72
+        },
+        {
+          "date": "2026-09-24",
+          "posts": 2,
+          "reach": 1274,
+          "engagement": 80
+        },
+        {
+          "date": "2026-09-25",
+          "posts": 2,
+          "reach": 1280,
+          "engagement": 70
+        },
+        {
+          "date": "2026-09-26",
+          "posts": 2,
+          "reach": 1286,
+          "engagement": 72
+        },
+        {
+          "date": "2026-09-27",
+          "posts": 2,
+          "reach": 1292,
+          "engagement": 80
+        },
+        {
+          "date": "2026-09-28",
+          "posts": 2,
+          "reach": 1298,
+          "engagement": 88
+        },
+        {
+          "date": "2026-09-29",
+          "posts": 2,
+          "reach": 1304,
+          "engagement": 82
+        },
+        {
+          "date": "2026-09-30",
+          "posts": 2,
+          "reach": 1310,
+          "engagement": 80
+        },
+        {
+          "date": "2026-10-01",
+          "posts": 2,
+          "reach": 0,
+          "engagement": 0
+        },
+        {
+          "date": "2026-10-02",
+          "posts": 2,
+          "reach": null,
+          "engagement": null
+        },
+        {
+          "date": "2026-10-03",
+          "posts": 2,
+          "reach": 1328,
+          "engagement": 90
+        },
+        {
+          "date": "2026-10-04",
+          "posts": 2,
+          "reach": 1334,
+          "engagement": 98
+        }
+      ],
+      "follower_series": [
+        {
+          "account_id": "eaa32c6a-8102-5d24-b2f7-42fc42533590",
+          "account_name": "demo_own_instagram",
+          "platform": "INSTAGRAM",
+          "values": [
+            {
+              "date": "2026-07-07",
+              "followers": 800,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-08",
+              "followers": 803,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-09",
+              "followers": 806,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-10",
+              "followers": 809,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-11",
+              "followers": 812,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-12",
+              "followers": 815,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-13",
+              "followers": 818,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-14",
+              "followers": 821,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-15",
+              "followers": 824,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-16",
+              "followers": 827,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-17",
+              "followers": 830,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-18",
+              "followers": 833,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-19",
+              "followers": 836,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-20",
+              "followers": 839,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-21",
+              "followers": 842,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-22",
+              "followers": 845,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-23",
+              "followers": 848,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-24",
+              "followers": 851,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-25",
+              "followers": 854,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-26",
+              "followers": 857,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-27",
+              "followers": 860,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-28",
+              "followers": 863,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-29",
+              "followers": 866,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-30",
+              "followers": 869,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-31",
+              "followers": 872,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-01",
+              "followers": 875,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-02",
+              "followers": 878,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-03",
+              "followers": 881,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-04",
+              "followers": 884,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-05",
+              "followers": 887,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-06",
+              "followers": 890,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-07",
+              "followers": 893,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-08",
+              "followers": 896,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-09",
+              "followers": 899,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-10",
+              "followers": 902,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-11",
+              "followers": 905,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-12",
+              "followers": 908,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-13",
+              "followers": 911,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-14",
+              "followers": 914,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-15",
+              "followers": 917,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-16",
+              "followers": 920,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-17",
+              "followers": 923,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-18",
+              "followers": 926,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-19",
+              "followers": 929,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-20",
+              "followers": 932,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-21",
+              "followers": 935,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-22",
+              "followers": 938,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-23",
+              "followers": 941,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-24",
+              "followers": 944,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-25",
+              "followers": 947,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-26",
+              "followers": 950,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-27",
+              "followers": 953,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-28",
+              "followers": 956,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-29",
+              "followers": 959,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-30",
+              "followers": 962,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-31",
+              "followers": 965,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-01",
+              "followers": 968,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-02",
+              "followers": 971,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-03",
+              "followers": 974,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-04",
+              "followers": 977,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-05",
+              "followers": 980,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-06",
+              "followers": 983,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-07",
+              "followers": 986,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-08",
+              "followers": 989,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-09",
+              "followers": 992,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-10",
+              "followers": 995,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-11",
+              "followers": 998,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-12",
+              "followers": 1001,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-13",
+              "followers": 1004,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-14",
+              "followers": 1007,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-15",
+              "followers": 1010,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-16",
+              "followers": 1013,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-17",
+              "followers": 1016,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-18",
+              "followers": 1019,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-19",
+              "followers": 1022,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-20",
+              "followers": 1025,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-21",
+              "followers": 1028,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-22",
+              "followers": 1031,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-23",
+              "followers": 1034,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-24",
+              "followers": 1037,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-25",
+              "followers": 1040,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-26",
+              "followers": 1043,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-27",
+              "followers": 1046,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-28",
+              "followers": 1049,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-29",
+              "followers": 1052,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-30",
+              "followers": 1055,
+              "row_present": true
+            },
+            {
+              "date": "2026-10-01",
+              "followers": 1058,
+              "row_present": true
+            },
+            {
+              "date": "2026-10-02",
+              "followers": 1061,
+              "row_present": true
+            },
+            {
+              "date": "2026-10-03",
+              "followers": 1064,
+              "row_present": true
+            },
+            {
+              "date": "2026-10-04",
+              "followers": 1067,
+              "row_present": true
+            }
+          ]
+        },
+        {
+          "account_id": "52c90201-7d14-52e5-a405-4abbebf5aed4",
+          "account_name": "demo_own_x",
+          "platform": "X",
+          "values": [
+            {
+              "date": "2026-07-07",
+              "followers": 1200,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-08",
+              "followers": 1203,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-09",
+              "followers": 1206,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-10",
+              "followers": 1209,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-11",
+              "followers": 1212,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-12",
+              "followers": 1215,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-13",
+              "followers": 1218,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-14",
+              "followers": 1221,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-15",
+              "followers": 1224,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-16",
+              "followers": 1227,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-17",
+              "followers": 1230,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-18",
+              "followers": 1233,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-19",
+              "followers": 1236,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-20",
+              "followers": 1239,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-21",
+              "followers": 1242,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-22",
+              "followers": 1245,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-23",
+              "followers": 1248,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-24",
+              "followers": 1251,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-25",
+              "followers": 1254,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-26",
+              "followers": 1257,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-27",
+              "followers": 1260,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-28",
+              "followers": 1263,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-29",
+              "followers": 1266,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-30",
+              "followers": 1269,
+              "row_present": true
+            },
+            {
+              "date": "2026-07-31",
+              "followers": 1272,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-01",
+              "followers": 1275,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-02",
+              "followers": 1278,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-03",
+              "followers": 1281,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-04",
+              "followers": 1284,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-05",
+              "followers": 1287,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-06",
+              "followers": 1290,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-07",
+              "followers": 1293,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-08",
+              "followers": 1296,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-09",
+              "followers": 1299,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-10",
+              "followers": 1302,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-11",
+              "followers": 1305,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-12",
+              "followers": 1308,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-13",
+              "followers": 1311,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-14",
+              "followers": 1314,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-15",
+              "followers": 1317,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-16",
+              "followers": 1320,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-17",
+              "followers": 1323,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-18",
+              "followers": 1326,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-19",
+              "followers": 1329,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-20",
+              "followers": 1332,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-21",
+              "followers": 1335,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-22",
+              "followers": 1338,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-23",
+              "followers": 1341,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-24",
+              "followers": 1344,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-25",
+              "followers": 1347,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-26",
+              "followers": 1350,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-27",
+              "followers": 1353,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-28",
+              "followers": 1356,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-29",
+              "followers": 1359,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-30",
+              "followers": 1362,
+              "row_present": true
+            },
+            {
+              "date": "2026-08-31",
+              "followers": 1365,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-01",
+              "followers": 1368,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-02",
+              "followers": 1371,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-03",
+              "followers": 1374,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-04",
+              "followers": 1377,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-05",
+              "followers": 1380,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-06",
+              "followers": 1383,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-07",
+              "followers": 1386,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-08",
+              "followers": 1389,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-09",
+              "followers": 1392,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-10",
+              "followers": 1395,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-11",
+              "followers": 1398,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-12",
+              "followers": 1401,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-13",
+              "followers": 1404,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-14",
+              "followers": 1407,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-15",
+              "followers": 1410,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-16",
+              "followers": 1413,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-17",
+              "followers": 1416,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-18",
+              "followers": 1419,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-19",
+              "followers": 1422,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-20",
+              "followers": 1425,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-21",
+              "followers": 1428,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-22",
+              "followers": 1431,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-23",
+              "followers": 1434,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-24",
+              "followers": 1437,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-25",
+              "followers": 1440,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-26",
+              "followers": 1443,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-27",
+              "followers": 1446,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-28",
+              "followers": 1449,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-29",
+              "followers": 1452,
+              "row_present": true
+            },
+            {
+              "date": "2026-09-30",
+              "followers": 1455,
+              "row_present": true
+            },
+            {
+              "date": "2026-10-01",
+              "followers": 1458,
+              "row_present": true
+            },
+            {
+              "date": "2026-10-02",
+              "followers": 1461,
+              "row_present": true
+            },
+            {
+              "date": "2026-10-03",
+              "followers": 1464,
+              "row_present": true
+            },
+            {
+              "date": "2026-10-04",
+              "followers": 1467,
+              "row_present": true
+            }
+          ]
+        }
+      ]
+    },
+    "top_trends": [
+      {
+        "topic_id": "24729b65-206c-5e6c-813f-93f7987985c1",
+        "topic_name": "生成AI",
+        "platform": "INSTAGRAM",
+        "trend_date": "2026-10-04",
+        "trend_score": 97.87,
+        "post_growth_rate": 22.6415,
+        "engagement_growth_rate": 46.9468,
+        "avg_engagement": 258.7846,
+        "trend_direction": "UP"
+      },
+      {
+        "topic_id": "95baac8a-21a2-5786-9275-49788c3b6f4d",
+        "topic_name": "業務効率化",
+        "platform": "X",
+        "trend_date": "2026-10-04",
+        "trend_score": 92.12,
+        "post_growth_rate": 13.2075,
+        "engagement_growth_rate": 35.6818,
+        "avg_engagement": 258.7,
+        "trend_direction": "UP"
+      },
+      {
+        "topic_id": "24729b65-206c-5e6c-813f-93f7987985c1",
+        "topic_name": "生成AI",
+        "platform": "X",
+        "trend_date": "2026-10-04",
+        "trend_score": 91.77,
+        "post_growth_rate": 19.2982,
+        "engagement_growth_rate": 42.7018,
+        "avg_engagement": 258.6471,
+        "trend_direction": "UP"
+      },
+      {
+        "topic_id": "95baac8a-21a2-5786-9275-49788c3b6f4d",
+        "topic_name": "業務効率化",
+        "platform": "INSTAGRAM",
+        "trend_date": "2026-10-04",
+        "trend_score": 90.09,
+        "post_growth_rate": 12.0,
+        "engagement_growth_rate": 34.0106,
+        "avg_engagement": 257.9464,
+        "trend_direction": "UP"
+      },
+      {
+        "topic_id": "93578ac3-aae2-5498-8e00-d2d97ea6617a",
+        "topic_name": "SNS運用",
+        "platform": "X",
+        "trend_date": "2026-10-04",
+        "trend_score": 68.59,
+        "post_growth_rate": 7.6923,
+        "engagement_growth_rate": 40.5858,
+        "avg_engagement": 72.0,
+        "trend_direction": "UP"
+      }
+    ],
+    "competitor_summary": [
+      {
+        "account_id": "b135b622-f78d-5ae3-bea1-f63580e6f513",
+        "account_name": "demo_competitor_instagram_01",
+        "display_name": "Fictional demo_competitor_instagram_01",
+        "platform": "INSTAGRAM",
+        "role": "COMPETITOR",
+        "followers": 1217,
+        "followers_as_of": "2026-10-04",
+        "posts": 90,
+        "posting_frequency": 1.0,
+        "avg_views": 1300.0,
+        "avg_likes": 60.3,
+        "avg_comments": 10.0,
+        "avg_shares": 6.0,
+        "avg_engagement": 76.3,
+        "avg_engagement_rate": 5.8692,
+        "engagement_rate_groups": [
+          {
+            "platform": "INSTAGRAM",
+            "denominator_type": "views",
+            "post_count": 90,
+            "avg_engagement_rate": 5.8692
+          }
+        ]
+      },
+      {
+        "account_id": "5b22caec-a126-5fc4-8e45-9ca181d1e8e6",
+        "account_name": "demo_competitor_x_01",
+        "display_name": "Fictional demo_competitor_x_01",
+        "platform": "X",
+        "role": "COMPETITOR",
+        "followers": 2489,
+        "followers_as_of": "2026-10-04",
+        "posts": 270,
+        "posting_frequency": 3.0,
+        "avg_views": 900.0,
+        "avg_likes": 35.3,
+        "avg_comments": 6.0,
+        "avg_shares": 4.0,
+        "avg_engagement": 45.3,
+        "avg_engagement_rate": 5.0333,
+        "engagement_rate_groups": [
+          {
+            "platform": "X",
+            "denominator_type": "views",
+            "post_count": 270,
+            "avg_engagement_rate": 5.0333
+          }
+        ]
+      },
+      {
+        "account_id": "6c51d395-ed0f-5100-a271-f0e2c2564b7c",
+        "account_name": "demo_competitor_x_02",
+        "display_name": "Fictional demo_competitor_x_02",
+        "platform": "X",
+        "role": "COMPETITOR",
+        "followers": 1878,
+        "followers_as_of": "2026-10-04",
+        "posts": 180,
+        "posting_frequency": 2.0,
+        "avg_views": 1100.0,
+        "avg_likes": 85.3,
+        "avg_comments": 8.0,
+        "avg_shares": 5.0,
+        "avg_engagement": 98.3,
+        "avg_engagement_rate": 8.9364,
+        "engagement_rate_groups": [
+          {
+            "platform": "X",
+            "denominator_type": "views",
+            "post_count": 180,
+            "avg_engagement_rate": 8.9364
+          }
+        ]
+      }
+    ],
+    "own_summary": {
+      "posts": 180,
+      "avg_engagement": 38.9213,
+      "avg_engagement_rate": null,
+      "rate_groups": [
+        {
+          "platform": "INSTAGRAM",
+          "denominator_type": "reach",
+          "post_count": 88,
+          "avg_engagement_rate": 8.3276
+        },
+        {
+          "platform": "X",
+          "denominator_type": "reach",
+          "post_count": 88,
+          "avg_engagement_rate": 6.7875
+        }
+      ],
+      "followers_by_account": [
+        {
+          "platform": "INSTAGRAM",
+          "account_id": "eaa32c6a-8102-5d24-b2f7-42fc42533590",
+          "account_name": "demo_own_instagram",
+          "recorded_date": "2026-10-04",
+          "followers": 1067
+        },
+        {
+          "platform": "X",
+          "account_id": "52c90201-7d14-52e5-a405-4abbebf5aed4",
+          "account_name": "demo_own_x",
+          "recorded_date": "2026-10-04",
+          "followers": 1467
+        }
+      ],
+      "account_count": 2
+    },
+    "competitor_aggregate": {
+      "posts": 540,
+      "avg_engagement": 68.1333,
+      "avg_engagement_rate": null,
+      "rate_groups": [
+        {
+          "platform": "INSTAGRAM",
+          "denominator_type": "views",
+          "post_count": 90,
+          "avg_engagement_rate": 5.8692
+        },
+        {
+          "platform": "X",
+          "denominator_type": "views",
+          "post_count": 450,
+          "avg_engagement_rate": 6.5945
+        }
+      ],
+      "followers_by_account": [
+        {
+          "platform": "INSTAGRAM",
+          "account_id": "b135b622-f78d-5ae3-bea1-f63580e6f513",
+          "account_name": "demo_competitor_instagram_01",
+          "recorded_date": "2026-10-04",
+          "followers": 1217
+        },
+        {
+          "platform": "X",
+          "account_id": "5b22caec-a126-5fc4-8e45-9ca181d1e8e6",
+          "account_name": "demo_competitor_x_01",
+          "recorded_date": "2026-10-04",
+          "followers": 2489
+        },
+        {
+          "platform": "X",
+          "account_id": "6c51d395-ed0f-5100-a271-f0e2c2564b7c",
+          "account_name": "demo_competitor_x_02",
+          "recorded_date": "2026-10-04",
+          "followers": 1878
+        }
+      ],
+      "account_count": 3
+    },
+    "top_opportunity": {
+      "topic_id": "24729b65-206c-5e6c-813f-93f7987985c1",
+      "topic_name": "生成AI",
+      "platform": "INSTAGRAM",
+      "trend_date": "2026-10-04",
+      "trend_score": 97.87,
+      "own_posts": 9,
+      "own_total_posts": 90,
+      "own_post_ratio": 10.0,
+      "competitor_posts": 15,
+      "competitor_total_posts": 90,
+      "competitor_post_ratio": 16.6667,
+      "gap_score": 88.083,
+      "classification": "OPPORTUNITY"
+    },
+    "ai_summary": {
+      "insight_id": "6c66dba8-ed19-4f1b-8964-8f366de66ba1",
+      "platform": null,
+      "analysis_from": "2026-07-07",
+      "analysis_to": "2026-10-04",
+      "created_at": "2026-10-06T02:42:56.097853Z",
+      "content": {
+        "summary": "Demo Fixture：架空CSVの保存済み参考レポート。実OpenAI生成ではありません。Reach 93392。",
+        "cautions": [
+          "Phase14固定Fixture。実OpenAI API呼出なし。成果保証なし。"
+        ],
+        "post_ideas": [
+          "上昇Topicの短い検証投稿を作り、同じ期間で結果を比べます。"
+        ],
+        "references": {
+          "post_ideas": [
+            [
+              "TREND:24729b65-206c-5e6c-813f-93f7987985c1:INSTAGRAM"
+            ]
+          ],
+          "market_trend": [
+            "TREND:24729b65-206c-5e6c-813f-93f7987985c1:INSTAGRAM"
+          ],
+          "own_analysis": [
+            "KPI_REACH"
+          ],
+          "improvement_points": [
+            [
+              "GAP:24729b65-206c-5e6c-813f-93f7987985c1:INSTAGRAM"
+            ]
+          ]
+        },
+        "market_trend": "市場の上昇・下降を7日Rollingの根拠で確認する架空例です。",
+        "own_analysis": "媒体別の測定基準を分け、Followersを合算せずに確認してください。",
+        "improvement_points": [
+          "投稿Coverageの低い機会Topicを小規模に検証します。"
+        ]
+      },
+      "model_name": "demo-fixture",
+      "prompt_version": "phase12-v1"
+    }
+  }
+}

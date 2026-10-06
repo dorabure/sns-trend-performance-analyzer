@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-04",
+  "files_checked": 324,
+  "high_risk_pattern_hits": [],
+  "configured_credential_hits": 0,
+  "forbidden_files": [],
+  "password_candidates": "env variable references / empty or change_me example / explicit dummy test fixtures, reviewed",
+  "personal_data_review": "current source, documents, fictional canonical accounts, final browser image; Git history is a separate user checklist item",
+  "canonical": [
+    {
+      "file": "account_daily.csv",
+      "bytes": 7893,
+      "sha256": "745f15fc6a9e5c3457ae2ff476195ceeef9768e416da4f0d7a3e7fb275b8c348",
+      "phase15_zip_equal": true
+    },
+    {
+      "file": "competitor_posts.csv",
+      "bytes": 64967,
+      "sha256": "cb63244952a6dc1aa89ae53a9b09e074114f5432b343cab28cc8b33f3a546f7b",
+      "phase15_zip_equal": true
+    },
+    {
+      "file": "own_posts.csv",
+      "bytes": 30060,
+      "sha256": "1e1af28692fd118deda1c3172e0e13f4da96c1a19c28f3db73a50acf20d73166",
+      "phase15_zip_equal": true
+    },
+    {
+      "file": "trend_posts.csv",
+      "bytes": 566574,
+      "sha256": "42bfc7dde03ed7aff9a24d07d368ef7523f2045675e0414bfbcee673fdb53641",
+      "phase15_zip_equal": true
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "01_overview_ja.jpg",
+      "bytes": 254132,
+      "sha256": "66b0356be72277ebfafdec09abf0b7f44a64c49f5710d933d19fffc66709ce42",
+      "phase15_zip_equal": true
+    },
+    {
+      "file": "02_my_account_ja.jpg",
+      "bytes": 316730,
+      "sha256": "5b0b2f374fd2cbf74c31060ee4e5208d878a30e5aaecbaa2b35f9e09e09ca07c",
+      "phase15_zip_equal": true
+    },
+    {
+      "file": "03_trend_explorer_ja.jpg",
+      "bytes": 74533,
+      "sha256": "b660d5708ad51cf67e4d4992c13cb0d20c29458a2c385dbab144c6baa2f20216",
+      "phase15_zip_equal": true
+    },
+    {
+      "file": "04_competitor_ja.jpg",
+      "bytes": 431040,
+      "sha256": "f9fed88567150869379c501ce9482df743261510707029bc24f926bdca326f25",
+      "phase15_zip_equal": true
+    },
+    {
+      "file": "05_gap_analysis_ja.jpg",
+      "bytes": 208155,
+      "sha256": "a72991418f08ab97bebac2b4c6b0d3b5d0c86f2b88ae16d149a564c7d77e3e4a",
+      "phase15_zip_equal": true
+    },
+    {
+      "file": "06_ai_insights_ja.jpg",
+      "bytes": 174121,
+      "sha256": "5040279090292653ff77191dd61ee3d7cb9bdfdedd995af1521507e2452dabc6",
+      "phase15_zip_equal": true
+    },
+    {
+      "file": "07_settings_language_ja.jpg",
+      "bytes": 90305,
+      "sha256": "b7a555774c2bfd428765cf821ac3da4bbd31512f90811ecea4db685cc840df0a",
+      "phase15_zip_equal": true
+    },
+    {
+      "file": "08_overview_en.jpg",
+      "bytes": 275167,
+      "sha256": "2031a86dce09c5f479650ca61486a1536af10b6728fc64d89edb9ac0ee577f0f",
+      "phase15_zip_equal": true
+    }
+  ]
+}

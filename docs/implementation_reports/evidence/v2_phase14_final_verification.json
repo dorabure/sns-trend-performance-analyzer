@@ -1,0 +1,43 @@
+{
+  "backend": {
+    "passed": 1631,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 351.52,
+    "exit_code": 0,
+    "network_guard": "httpx HTTPTransport / AsyncHTTPTransport fail-fast"
+  },
+  "frontend": {
+    "passed": 84,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "duration_ms": 13753.04691,
+    "exit_code": 0,
+    "network": "none"
+  },
+  "typecheck": "PASS",
+  "build": "PASS",
+  "static_routes": 19,
+  "openapi_paths": 47,
+  "alembic_head": "0005_v2_provider_core",
+  "migration_hashes": {
+    "backend/alembic/versions/0001_initial_create_initial_schema.py": "508943d4824451b8faa66df5105198d44002c5143a4520199d0891cb1af8570a",
+    "backend/alembic/versions/0002_v2_data_mode_and_providers.py": "d8666dc8525a59dbb9c1219bb01613afbc92b8de49f732ea21cf48ff91d7a450",
+    "backend/alembic/versions/0003_v2_background_job_foundation.py": "d64604a6a62f4c107e251695fe4fe68bbd99a94290f8a310494a6ff5e2d0dece",
+    "backend/alembic/versions/0004_v2_scheduler_job_operations.py": "bbfd2da2c836cc37f47089e1169e885c5a79ac3f56871a4b0beb18fe0bbbc628",
+    "backend/alembic/versions/0005_v2_provider_core_provenance.py": "bb213e3acb5f10c047b335135fd0ff941b18a0b7341060c3375831329e02db38"
+  },
+  "protected_files": 303,
+  "production_diff": 0,
+  "changed_production_files": [],
+  "git_head": "e2ad3848105687fb1b48c872e48d15d9315b3b97",
+  "external_calls": {
+    "X": 0,
+    "Instagram": 0,
+    "OpenAI": 0
+  },
+  "public_demo_verified": true,
+  "screenshots": 12,
+  "published": false
+}

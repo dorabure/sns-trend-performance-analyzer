@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-04",
+  "files_checked": 317,
+  "high_risk_pattern_hits": [],
+  "forbidden_files": [],
+  "summary_ja_lengths": {
+    "1行説明": 100,
+    "短い説明": 292,
+    "詳細説明": 780
+  },
+  "historical_readme_preservation": "OK",
+  "canonical_verified_by": "check_docs.py",
+  "screenshots": [
+    {
+      "name": "01_overview_ja.jpg",
+      "bytes": 254132,
+      "sha256": "66b0356be72277ebfafdec09abf0b7f44a64c49f5710d933d19fffc66709ce42"
+    },
+    {
+      "name": "02_my_account_ja.jpg",
+      "bytes": 316730,
+      "sha256": "5b0b2f374fd2cbf74c31060ee4e5208d878a30e5aaecbaa2b35f9e09e09ca07c"
+    },
+    {
+      "name": "03_trend_explorer_ja.jpg",
+      "bytes": 74533,
+      "sha256": "b660d5708ad51cf67e4d4992c13cb0d20c29458a2c385dbab144c6baa2f20216"
+    },
+    {
+      "name": "04_competitor_ja.jpg",
+      "bytes": 431040,
+      "sha256": "f9fed88567150869379c501ce9482df743261510707029bc24f926bdca326f25"
+    },
+    {
+      "name": "05_gap_analysis_ja.jpg",
+      "bytes": 208155,
+      "sha256": "a72991418f08ab97bebac2b4c6b0d3b5d0c86f2b88ae16d149a564c7d77e3e4a"
+    },
+    {
+      "name": "06_ai_insights_ja.jpg",
+      "bytes": 174121,
+      "sha256": "5040279090292653ff77191dd61ee3d7cb9bdfdedd995af1521507e2452dabc6"
+    },
+    {
+      "name": "07_settings_language_ja.jpg",
+      "bytes": 90305,
+      "sha256": "b7a555774c2bfd428765cf821ac3da4bbd31512f90811ecea4db685cc840df0a"
+    },
+    {
+      "name": "08_overview_en.jpg",
+      "bytes": 275167,
+      "sha256": "2031a86dce09c5f479650ca61486a1536af10b6728fc64d89edb9ac0ee577f0f"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "version": "2.0 Interim",
+  "status": "Release Candidate",
+  "completion": "Complete",
+  "date": "2026-10-06",
+  "git_head": "e2ad3848105687fb1b48c872e48d15d9315b3b97",
+  "archive_source": "validated uncommitted working tree; not HEAD-only archive",
+  "backend_tests": {
+    "passed": 1631,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 351.52,
+    "exit_code": 0,
+    "network_guard": "httpx HTTPTransport / AsyncHTTPTransport fail-fast"
+  },
+  "frontend_tests": {
+    "passed": 84,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "duration_ms": 13753.04691,
+    "exit_code": 0,
+    "network": "none"
+  },
+  "typecheck": "PASS",
+  "build": "PASS",
+  "static_routes": 19,
+  "openapi_paths": 47,
+  "alembic_head": "0005_v2_provider_core",
+  "migration_hashes": {
+    "backend/alembic/versions/0001_initial_create_initial_schema.py": "508943d4824451b8faa66df5105198d44002c5143a4520199d0891cb1af8570a",
+    "backend/alembic/versions/0002_v2_data_mode_and_providers.py": "d8666dc8525a59dbb9c1219bb01613afbc92b8de49f732ea21cf48ff91d7a450",
+    "backend/alembic/versions/0003_v2_background_job_foundation.py": "d64604a6a62f4c107e251695fe4fe68bbd99a94290f8a310494a6ff5e2d0dece",
+    "backend/alembic/versions/0004_v2_scheduler_job_operations.py": "bbfd2da2c836cc37f47089e1169e885c5a79ac3f56871a4b0beb18fe0bbbc628",
+    "backend/alembic/versions/0005_v2_provider_core_provenance.py": "bb213e3acb5f10c047b335135fd0ff941b18a0b7341060c3375831329e02db38"
+  },
+  "production_diff": 0,
+  "protected_files": 303,
+  "X_status": "Complete / previously real-verified in private environment",
+  "Instagram_status": "Deferred / OAuth and Profile foundation only",
+  "performance": {
+    "status": "controlled local validation",
+    "phase14_backend_seconds": 351.52,
+    "phase12_warm_examples": {
+      "overview_ms": 142,
+      "gap_ms": 43,
+      "ranking_ms": 33,
+      "competitor_ms": 131,
+      "rebuild_seconds": 1.57
+    },
+    "production_sla": false
+  },
+  "known_limitations": [
+    "Instagram Deferred / OAuth and Profile foundation only; no posts/metrics/media/Insights/pagination/initial or incremental sync",
+    "No multi-user authentication or cloud production deployment",
+    "No SLA or 24/7 operational proof",
+    "Real X/Instagram/OpenAI not reverified in Phase14; X previously real-verified",
+    "Demo AI is a fixed Fake fixture; real AI quality not validated",
+    "Saved posts and AI content are not translated",
+    "OWN retained-match import still performs a per-post SELECT",
+    "Local controlled benchmarks are not production SLA",
+    "Full screen-reader audio test unperformed",
+    "Phase12 historical normal DB pre-recreation evidence gap is not recovered",
+    "Private archive text scan has zero qualifying post strings; no claim of complete post-string coverage"
+  ],
+  "review_zip": "SNS_Analyzer_V2_Phase14.zip",
+  "rc_zip": "SNS_Analyzer_V2_Interim_ReleaseCandidate.zip",
+  "zip_sha256": null,
+  "source_companion": "SNS_Analyzer_V2_Interim_ReleaseCandidate.release_validation.json",
+  "sha256_companions": [
+    "SNS_Analyzer_V2_Phase14.sha256",
+    "SNS_Analyzer_V2_Interim_ReleaseCandidate.sha256"
+  ],
+  "external_calls": {
+    "X": 0,
+    "Instagram": 0,
+    "OpenAI": 0
+  },
+  "public_demo_verified": true,
+  "screenshots": 12,
+  "published": false,
+  "user_decisions_pending": [
+    "repository visibility/name",
+    "license",
+    "Git author/email exposure",
+    "submission destination",
+    "final publication approval"
+  ]
+}

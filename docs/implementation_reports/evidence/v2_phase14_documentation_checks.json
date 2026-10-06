@@ -1,0 +1,110 @@
+{
+  "links": {
+    "markdown_files": 50,
+    "local_links_checked": 208,
+    "missing_links": [],
+    "canonical_files": [
+      {
+        "name": "own_posts.csv",
+        "rows": 180,
+        "sha256": "1e1af28692fd118deda1c3172e0e13f4da96c1a19c28f3db73a50acf20d73166"
+      },
+      {
+        "name": "account_daily.csv",
+        "rows": 180,
+        "sha256": "745f15fc6a9e5c3457ae2ff476195ceeef9768e416da4f0d7a3e7fb275b8c348"
+      },
+      {
+        "name": "trend_posts.csv",
+        "rows": 4500,
+        "sha256": "42bfc7dde03ed7aff9a24d07d368ef7523f2045675e0414bfbcee673fdb53641"
+      },
+      {
+        "name": "competitor_posts.csv",
+        "rows": 540,
+        "sha256": "cb63244952a6dc1aa89ae53a9b09e074114f5432b343cab28cc8b33f3a546f7b"
+      }
+    ]
+  },
+  "current_markdown_files": 14,
+  "unclosed_fences": 0,
+  "broken_tables": 0,
+  "duplicate_current_headings": 0,
+  "mermaid_blocks_checked_statically": 1,
+  "github_rendering_guaranteed": false,
+  "screenshots": [
+    {
+      "file": "docs/portfolio/screenshots/v2_01_overview_ja.png",
+      "width": 1425,
+      "height": 990,
+      "bytes": 349889
+    },
+    {
+      "file": "docs/portfolio/screenshots/v2_02_my_account_ja.png",
+      "width": 1425,
+      "height": 990,
+      "bytes": 388084
+    },
+    {
+      "file": "docs/portfolio/screenshots/v2_03_trend_ja.png",
+      "width": 1425,
+      "height": 990,
+      "bytes": 399037
+    },
+    {
+      "file": "docs/portfolio/screenshots/v2_04_competitor_ja.png",
+      "width": 1425,
+      "height": 990,
+      "bytes": 456491
+    },
+    {
+      "file": "docs/portfolio/screenshots/v2_05_gap_ja.png",
+      "width": 1424,
+      "height": 2261,
+      "bytes": 873278
+    },
+    {
+      "file": "docs/portfolio/screenshots/v2_06_ai_latest_ja.png",
+      "width": 1425,
+      "height": 990,
+      "bytes": 330290
+    },
+    {
+      "file": "docs/portfolio/screenshots/v2_07_ai_history_compare_ja.png",
+      "width": 1521,
+      "height": 680,
+      "bytes": 294238
+    },
+    {
+      "file": "docs/portfolio/screenshots/v2_08_settings_import_ja.png",
+      "width": 1424,
+      "height": 1409,
+      "bytes": 372788
+    },
+    {
+      "file": "docs/portfolio/screenshots/v2_09_provider_x_capabilities_status.png",
+      "width": 1425,
+      "height": 990,
+      "bytes": 220561
+    },
+    {
+      "file": "docs/portfolio/screenshots/v2_10_instagram_deferred.png",
+      "width": 1425,
+      "height": 990,
+      "bytes": 236817
+    },
+    {
+      "file": "docs/portfolio/screenshots/v2_11_overview_en.png",
+      "width": 1425,
+      "height": 990,
+      "bytes": 391263
+    },
+    {
+      "file": "docs/portfolio/screenshots/v2_12_ai_compare_mobile.png",
+      "width": 375,
+      "height": 811,
+      "bytes": 163986
+    }
+  ],
+  "screenshot_visual_privacy_review": "PASS: fictional data only; no real account/token/email/private post/OS path"
+}
